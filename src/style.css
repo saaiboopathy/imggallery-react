@@ -1,33 +1,41 @@
 * {
     padding: 0;
     margin: 0;
+    background-color: black;
+    
 }
 
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    gap: 30px;
     margin-top: 30px;
-    width: 50%;
+    grid-template-columns: 170px 170px 170px 170px;
+    justify-content: center;
+   
+        
 }
 
 .products div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
-    border: 1px solid lightgray;
-    background-color: lightgray;
-    padding: 5px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    padding-top: 10px;
+    width: 170px;
+    height: 240px;
 }
 
 .products img {
     width: 150px;
     height: 200px;
-    margin-bottom: 5px;
+    margin-bottom: 0; /* No margin between image and text */
 }
 
 .products h3 {
     font-size: 16px;
-    color: black;
+    color: white;
+    margin-top: 5px; /* Optional, to add a little space between image and text */
+    margin-bottom: 0; /* Remove bottom margin */
+    text-align: center;
 }
